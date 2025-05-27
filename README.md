@@ -20,12 +20,17 @@
 
 #### REGRAS DE NEGÓCIO
 
-A cada nova LeituraClimatica, um serviço verifica se há condições extremas:
+##### A cada nova LeituraClimatica, um serviço verifica se há condições extremas:
 - Temperatura > 38 °C → Gera alerta de calor
 - Umidade < 20% → Gera alerta de baixa umidade
 - Pressão < 1000 hPa → Gera alerta de tempestade
 - O alerta é persistido e pode ser enviado via e-mail (ou apenas exibido no dashboard)
-
+#####  Segurança por perfil:
+- Enum Role { ADMIN, USER }
+##### Restrições:
+- ADMIN pode tudo
+- USER pode: ver dados, criar leitura, ver alertas
+- Ações de criar/editar/deletar estação, deletar alertas ou usuários são só para ADMIN
   
 ### EndPoints
 - POST /leituras → recebe leitura e gera alertas se necessário
