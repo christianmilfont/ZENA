@@ -2,7 +2,7 @@
 - Título: Estação Climática Inteligente com Alerta de Eventos Extremos
 - Objetivo: Criar um sistema que recebe dados de uma estação climática (simulada ou real via IoT), analisa esses dados para detectar condições de risco (calor extremo, umidade muito baixa, pressão indicando tempestade) e fornece uma interface para monitoramento e notificação.
 
-#### Arquitetura:
+### Arquitetura:
 - Backend: Spring Boot + JPA + REST + PostgreSQL
 - Frontend: React.js ou Thymeleaf (se quiser tudo em Java)
 - IoT: Dispositivo que envia dados via HTTP/MQTT para uma API REST (pode simular com scripts)
@@ -10,7 +10,23 @@
 - Documentação: Swagger + README.md completo
 - Testes: Unitários (JUnit), cobertura mínima de 60%
 
+#### MODELAGEM DE DOMÍNIO (Java + JPA)
 
+- Entidades principais:
+- Estacao (id, nome, localizacao, ativo)
+- LeituraClimatica (id, estacao_id, temperatura, umidade, pressao, dataHora)
+- Alerta (id, tipo, mensagem, leitura_id, dataHora)
+- Usuario (id, nome, email, senha, notificacoesAtivas)
+
+#### REGRAS DE NEGÓCIO
+
+A cada nova LeituraClimatica, um serviço verifica se há condições extremas:
+- Temperatura > 38 °C → Gera alerta de calor
+- Umidade < 20% → Gera alerta de baixa umidade
+- Pressão < 1000 hPa → Gera alerta de tempestade
+- O alerta é persistido e pode ser enviado via e-mail (ou apenas exibido no dashboard)
+
+  
 ### EndPoints
 - POST /leituras → recebe leitura e gera alertas se necessário
 - GET /alertas → retorna todos os alertas gerados
