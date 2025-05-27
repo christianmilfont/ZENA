@@ -24,7 +24,7 @@
 - Temperatura > 38 °C → Gera alerta de calor
 - Umidade < 20% → Gera alerta de baixa umidade
 - Pressão < 1000 hPa → Gera alerta de tempestade
-- O alerta é persistido e pode ser enviado via e-mail (ou apenas exibido no dashboard)
+- O alerta é persistido e pode ser enviado via e-mail e exibir no dashboard
 #####  Segurança por perfil:
 - Enum Role { ADMIN, USER }
 ##### Restrições:
