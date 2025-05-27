@@ -3,7 +3,7 @@
 - Objetivo: Criar um sistema que recebe dados de uma estação climática (simulada ou real via IoT), analisa esses dados para detectar condições de risco (calor extremo, umidade muito baixa, pressão indicando tempestade) e fornece uma interface para monitoramento e notificação.
 
 ### Arquitetura:
-- Backend: Spring Boot + JPA + REST + PostgreSQL
+- Backend: Spring Boot + JPA + REST + PostgreSQL (Banco rodando com Docker Compose)
 - Frontend: React.js ou Thymeleaf (se quiser tudo em Java)
 - IoT: Dispositivo que envia dados via HTTP/MQTT para uma API REST (pode simular com scripts)
 - API: /leituras, /alertas, /usuarios, /configuracoes
