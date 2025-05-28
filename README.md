@@ -72,5 +72,9 @@ Camadas:
 - Utilitário JwtUtil
 - Usuário se cadastra via /register e faz login via /login para receber um token
 - O token é enviado em Authorization: Bearer xxx nas demais requisições
-  
+
+![image](https://github.com/user-attachments/assets/2537a945-ee36-4fd3-beed-fdd06fa775c2)
+
+------------------------------------------------------------------------
+### Fluxo Aplicação (Criação do DashBoard com alertas e historico de alertas)
 ![image](https://github.com/user-attachments/assets/60ca8476-05e2-481e-b22a-ed5bf00e85d1)
