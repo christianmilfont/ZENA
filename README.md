@@ -1,7 +1,49 @@
 # ZENA (JAVA)
 - Título: Estação Climática Inteligente com Alerta de Eventos Extremos
 - Objetivo: Criar um sistema que recebe dados de uma estação climática, analisa esses dados para detectar condições de risco (calor extremo, umidade muito baixa, pressão indicando tempestade) e fornece uma interface para monitoramento e notificação, além de detectar os abrigos mais próximos baseados na localização do usuário.
+```
+Json para criar Usuarios:
+{
+  "id": "1",
+  "username": "admin",
+  "password": "12345",
+  "email": "cmilfont021@gmail.com",
+  "role": "ADMIN"
+}
 
+Json para criar Estacoes:
+{
+  "id": "23",
+  "nome": "Estação Luz",
+  "localizacao": "Centro de São Paulo",
+  "ativo": true,
+  "usuario": {
+    "id": "1"
+  }
+}
+
+Json para criar Leituras Climaticas:
+{
+  "estacaoId": "23",
+  "temperatura": 36.5,
+  "umidade": 45.0,
+  "pressao": 1013.0,
+  "velocidadeVento": 5.2,
+  "direcaoVento": "Noroeste",
+  "precipitacao": 2.0,
+  "condicoesClimaticas": "Parcialmente nublado"
+}
+
+Json para criar alertas:
+{
+  "mensagem": "Calor extremo",
+  "tipo": "temperatura acima de 38 graus",
+  "leituraId": "4b1ec253-021b-4f9e-9637-5e59f1c03ddc",
+  "usuarioId": "1"
+}
+
+Usei UUID para gerar automaticamente alguns ID's
+```
 ### Arquitetura:
 - Backend: Spring Boot + JPA + REST + PostgreSQL (Banco rodando com Docker Compose)
 - Frontend: React
