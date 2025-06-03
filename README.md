@@ -23,3 +23,9 @@
 - Uso consistente do design, respeitando padrões de usabilidade.
 - Aplicação das guidelines da Apple/Google.
 - Criatividade e identidade visual clara e funcional
+
+![image](https://github.com/user-attachments/assets/eed92702-db0e-45a9-8115-bca1658d243d)
+------
+![image](https://github.com/user-attachments/assets/00a75da5-7836-427a-9aca-bb5304740f2a)
+------
+![image](https://github.com/user-attachments/assets/ce257bbf-866d-4248-9e6c-8c35fed09dbd)
