@@ -29,4 +29,7 @@
 ![image](https://github.com/user-attachments/assets/00a75da5-7836-427a-9aca-bb5304740f2a)
 ------
 ![image](https://github.com/user-attachments/assets/ce257bbf-866d-4248-9e6c-8c35fed09dbd)
-npm install axios @react-native-async-storage/async-storage expo-location
+
+## Utilizando a logica para buscar o abrigo mais proximo baseado na localização do usuario
+- Tecnologia usada: npm install axios @react-native-async-storage/async-storage expo-location
+![image](https://github.com/user-attachments/assets/fbd5828f-f264-448a-8561-a9b4b17630ac)
