@@ -73,18 +73,8 @@ Usei UUID para gerar automaticamente alguns ID's
 #####  Segurança por perfil:
 - Enum Role { ADMIN, USER }
 ##### Restrições:
-- ADMIN pode tudo
-- USER pode: ver dados, criar leitura, ver alertas
-- Ações de criar/editar/deletar estação, deletar alertas ou usuários são só para ADMIN
-  
 
 ### CRUD Completo
-- EstacaoController: GET /estacoes, GET /estacoes/{id}, POST, PUT, DELETE
-- LeituraClimaticaController: GET /leituras, filtros por data, estacao
-- AlertaController: GET /alertas, filtros por tipo e data
-- UsuarioController: GET /usuarios, PUT /usuarios/{id}, DELETE /usuarios/{id} (admin only),  POST /usuarios/criar
-- AbrigoController: GET /abrigos, PUT /abrigos/{id}, DELETE /abrigos/{id} (admin only), POST /abrigo/criar (admin only)
-- Uso de DTOs e validações com @Valid
 
 Segurança: apenas usuários logados podem acessar os dados, exceto login/register
 ## Tecnologias:
@@ -93,11 +83,12 @@ Segurança: apenas usuários logados podem acessar os dados, exceto login/regist
 
 Camadas:
 - controller: recebe requisições REST
-- service: regras de negócio e geração de alertas
+- service: regras de negócio, geração de alertas e autenticações
 - repository: acesso ao banco com Spring Data JPA
 - model: classes de domínio com anotações JPA
 - DTOs para entrada/saída de dados
-
+- security: para minhas configurações de Token e liberação de requisições para determinadas Roles
+- config: para configurar o CORS dos meus endpoints
 
 ### - FRONTEND 
 - Painel com gráfico de temperatura, umidade, pressão
@@ -115,10 +106,36 @@ Camadas:
 - Usuário se cadastra via /register e faz login via /login para receber um token
 - O token é enviado em Authorization: Bearer xxx nas demais requisições
 
-![image](https://github.com/user-attachments/assets/2537a945-ee36-4fd3-beed-fdd06fa775c2)
+## Testando o JWT:
+```
+- cadastro de usuário (endpoint /users - POST)
+- URL: http://localhost:8080/users (ajuste a porta se for diferente)
 
-------------------------------------------------------------------------
-### Fluxo Aplicação (Criação do DashBoard com alertas e historico de alertas)
-![image](https://github.com/user-attachments/assets/e0972c79-c899-4985-8759-e7c0ad0feca5)
+- Método: POST
 
+- Body (JSON):
+{
+  "id": "1",
+  "username": "usuarioTeste",
+  "password": "minhaSenha123",
+  "email": "teste@example.com",
+  "role": "USER"
+}
+```
+![image](https://github.com/user-attachments/assets/8db1c42a-e98d-496c-8d16-4623773381d4)
 
+### Agora a senha criptografada, gerando token...:
+```
+Testar login para gerar token JWT (endpoint /users/login - POST)
+URL: http://localhost:8080/users/login
+
+Método: POST
+
+Body (JSON):
+{
+  "username": "usuarioTeste",
+  "password": "minhaSenha123"
+}
+
+```
+![image](https://github.com/user-attachments/assets/ac24c967-f403-41f3-88c0-248088688ff4)
