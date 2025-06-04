@@ -29,3 +29,4 @@
 ![image](https://github.com/user-attachments/assets/00a75da5-7836-427a-9aca-bb5304740f2a)
 ------
 ![image](https://github.com/user-attachments/assets/ce257bbf-866d-4248-9e6c-8c35fed09dbd)
+npm install axios @react-native-async-storage/async-storage expo-location
