@@ -2,6 +2,7 @@
 using AbrigoApi.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Oracle.EntityFrameworkCore.Metadata;
 
@@ -10,9 +11,11 @@ using Oracle.EntityFrameworkCore.Metadata;
 namespace AbrigoApi.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250604215607_AddLatitudeLongitudeToAbrigo")]
+    partial class AddLatitudeLongitudeToAbrigo
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -26,6 +29,10 @@ namespace AbrigoApi.Migrations
                     b.Property<string>("Id")
                         .HasColumnType("VARCHAR2(255)")
                         .HasColumnName("ID");
+
+                    b.Property<byte>("Ativo")
+                        .HasColumnType("NUMBER(1)")
+                        .HasColumnName("ATIVO");
 
                     b.Property<int>("Capacidade")
                         .HasColumnType("NUMBER(10)")

@@ -8,7 +8,7 @@
         public string Password { get; set; } = string.Empty;
         public string Email { get; set; } = string.Empty;
         public string Role { get; set; } = "user";
-
+        // Navegação - um usuário tem muitos abrigos
         public ICollection<Abrigo> Abrigos { get; set; } = new List<Abrigo>();
         public Usuario()
         {

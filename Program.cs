@@ -2,6 +2,18 @@ using Microsoft.EntityFrameworkCore;
 using AbrigoApi.Context; // <- Coloque o namespace onde está seu DbContext
 
 var builder = WebApplication.CreateBuilder(args);
+//liberar cors para meu mobile
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowLocalhost",
+        policy =>
+        {
+            policy.WithOrigins("http://localhost:8081") // ? Aqui é onde seu app React Native roda
+                  .AllowAnyHeader()
+                  .AllowAnyMethod()
+                  .AllowCredentials(); // se precisar de cookies ou auth headers
+        });
+});
 
 // Adiciona o DbContext com Oracle
 builder.Services.AddDbContext<AppDbContext>(options =>
@@ -20,7 +32,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+app.UseCors("AllowLocalhost");
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();

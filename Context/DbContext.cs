@@ -91,15 +91,20 @@ namespace AbrigoApi.Context
                       .HasColumnType("NUMBER(10)")
                       .IsRequired();
 
-                entity.Property(a => a.Ativo)
-                      .HasColumnName("ATIVO")
-                      .HasConversion(new BoolToZeroOneConverter<byte>())
-                      .HasColumnType("NUMBER(1)")
-                      .IsRequired();
+             
 
                 entity.Property(a => a.UsuarioId)
                       .HasColumnName("USUARIO_ID")
                       .HasMaxLength(255)
+                      .IsRequired();
+                entity.Property(a => a.Latitude)
+                      .HasColumnName("LATITUDE")
+                      .HasColumnType("NUMBER(9,6)")
+                      .IsRequired();
+
+                entity.Property(a => a.Longitude)
+                      .HasColumnName("LONGITUDE")
+                      .HasColumnType("NUMBER(9,6)")
                       .IsRequired();
 
                 entity.HasOne(a => a.Usuario)

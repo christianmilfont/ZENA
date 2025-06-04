@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AbrigoApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+64288fd28b0400cd9988357ac798f0808ae737fd")]
 [assembly: System.Reflection.AssemblyProductAttribute("AbrigoApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AbrigoApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

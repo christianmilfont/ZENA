@@ -252,48 +252,17 @@
             "type": "integer",
             "format": "int32"
           },
-          "ativo": {
-            "type": "boolean"
-          },
           "usuarioId": {
             "type": "string",
             "nullable": true
           },
-          "usuario": {
-            "$ref": "#/components/schemas/Usuario"
-          }
-        },
-        "additionalProperties": false
-      },
-      "Usuario": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "string",
-            "nullable": true
+          "latitude": {
+            "type": "number",
+            "format": "double"
           },
-          "username": {
-            "type": "string",
-            "nullable": true
-          },
-          "password": {
-            "type": "string",
-            "nullable": true
-          },
-          "email": {
-            "type": "string",
-            "nullable": true
-          },
-          "role": {
-            "type": "string",
-            "nullable": true
-          },
-          "abrigos": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Abrigo"
-            },
-            "nullable": true
+          "longitude": {
+            "type": "number",
+            "format": "double"
           }
         },
         "additionalProperties": false

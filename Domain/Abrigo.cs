@@ -1,4 +1,7 @@
-﻿namespace AbrigoApi.Domain
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
+
+namespace AbrigoApi.Domain
 {
     public class Abrigo
     {
@@ -8,10 +11,12 @@
         public string Endereco { get; set; } = string.Empty;
         public int Capacidade { get; set; }
         public int OcupacaoAtual { get; set; }
-        public bool Ativo { get; set; } 
 
         public String UsuarioId { get; set; }
-        public Usuario Usuario { get; set; } = null!;
+        [JsonIgnore]
+        public Usuario? Usuario { get; set; } = null!;
+        public double Latitude { get; set; }
+        public double Longitude { get; set; }
         public Abrigo()
         {
             Id = Guid.NewGuid().ToString(); // Id gerado assim que o objeto é criado
