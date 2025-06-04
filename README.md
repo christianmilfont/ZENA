@@ -33,10 +33,13 @@ Corpo de requisição JSON:
       "email": "string",
       "role": "string",
       "abrigos": [
-      "string"
-]
-    }
+        "string"
+      ]
+    },
+    "latitude": 0,
+    "longitude": 0
   }
+]
 ```
 ## Usando o migrations:
 
