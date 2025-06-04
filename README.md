@@ -1,6 +1,20 @@
 # ZENA
-Nosso projeto para Global Solutions
+Nosso projeto para Global Solutions da matéria de .NET, para localizar abrigos próximos ao Usuário
 
+## Tecnologias:
+Oracle EntityFramework
+Microsoft EntityFramework Design
+Microsoft AspNetCore
+
+## Estrutura do projeto:
+- domains: para definir meus modelos (Usuário e Abrigo)
+- controller: definir os endpoints da minha API 
+- context: para mapear meus domains e também garantir que sejam formatados corretamente no banco de dados Oracle (muito rígido)
+- Mogrations: para armazenar o schema da minha entidade do banco de dados
+- Program.cs: registar minha dbcontext
+- AppSettings.json: definir minha conexão com o banco
+
+  
 Corpo de requisição JSON:
 ```
 [
