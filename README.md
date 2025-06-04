@@ -73,8 +73,13 @@ Usei UUID para gerar automaticamente alguns ID's
 #####  Segurança por perfil:
 - Enum Role { ADMIN, USER }
 ##### Restrições:
+Apenas usuários logados podem acessar dados, exceto login e cadastro
 
 ### CRUD Completo
+CRUD completo para as entidades
+
+Apenas usuários logados podem acessar dados, exceto login e cadastro
+
 
 Segurança: apenas usuários logados podem acessar os dados, exceto login/register
 ## Tecnologias:
@@ -88,13 +93,20 @@ Camadas:
 - model: classes de domínio com anotações JPA
 - DTOs para entrada/saída de dados
 - security: para minhas configurações de Token e liberação de requisições para determinadas Roles
-- config: para configurar o CORS dos meus endpoints
+- config: para configurar o CORS dos meus endpoints e ajustar configurações do meu Swagger para personalizar ainda mais
 
 ### - FRONTEND 
-- Painel com gráfico de temperatura, umidade, pressão
-- Lista de alertas mais recentes
-- Tela para cadastrar estação
+Utilizei minha API java para lidar com as requisições do App Mobile, evidente na lógica de login no controller de User
 
+#### Caching:
+- O cache “users” vai guardar a página e critérios da página
+- 
+#### Paginação e filtros:
+```
+- Como buscar no Postman
+  retorna a primeira página com 5 usuários ordenados por username ascendente.
+  GET /users?page=0&size=5&sort=username,asc
+```
 #### Autenticação com JWT
 
 - Adicionar dependências do Spring Security + JWT (jjwt ou auth0)
