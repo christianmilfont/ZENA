@@ -44,4 +44,5 @@ Isso vai aplicar a migration e criar a tabela ABRIGOS no banco, junto com a chav
 
 ## Testando Swagger para ver se funcionou!:
 ![image](https://github.com/user-attachments/assets/c357e3e5-4fd2-4f90-9a65-97d73bcba157)
+![image](https://github.com/user-attachments/assets/a60c6bd4-185f-4261-a931-b90f5fb35058)
 
