@@ -171,6 +171,15 @@ Body (JSON):
   "username": "usuarioTeste",
   "password": "minhaSenha123"
 }
-
 ```
 ![image](https://github.com/user-attachments/assets/ac24c967-f403-41f3-88c0-248088688ff4)
+
+-----------------
+## Por ultimo, o deploy em nuvem da aplicação (Render) :
+- problema: A Render (e outras plataformas como Heroku e Railway) não oferecem suporte nativo ao Oracle Database.
+
+- Solução que apliquei, manter o banco Oracle da FIAP remoto e fazer deploy apenas do backend na nuvem
+![image](https://github.com/user-attachments/assets/6af3fdbe-ec68-45bc-a3b5-485ce04dd300)
+
+
+
