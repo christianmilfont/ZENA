@@ -16,7 +16,7 @@ Json para criar Estacoes:
   "id": "23",
   "nome": "Estação Luz",
   "localizacao": "Centro de São Paulo",
-  "ativo": true,
+  "ativo": true, ----> eu coloco sempre 1 ou 0 pois banco oracle é muito rigido!
   "usuario": {
     "id": "1"
   }
@@ -109,22 +109,30 @@ Utilizei minha API java para lidar com as requisições do App Mobile, evidente 
 ```
 #### Autenticação com JWT
 
-- Adicionar dependências do Spring Security + JWT (jjwt ou auth0)
+- Adicionar dependências do Spring Security + JWT (auth0)
 - Criar as classes:
 - UserDetailsService personalizado
 - Filtro de autenticação JWT
 - AuthController com endpoints /login e /register
-- Utilitário JwtUtil
 - Usuário se cadastra via /register e faz login via /login para receber um token
 - O token é enviado em Authorization: Bearer xxx nas demais requisições
 
 ## Testando o JWT:
+### Para logar no Swagger:
+```
+{
+  "username": "usuarioTeste",
+  "password": "minhaSenha123"
+}
+```
 ```
 - cadastro de usuário (endpoint /users - POST)
 - URL: http://localhost:8080/users (ajuste a porta se for diferente)
-
+```
 - Método: POST
-
+Exemplo:
+![image](https://github.com/user-attachments/assets/7f82e6b8-365f-4bf5-83ed-ee1a7b2c682c)
+```
 - Body (JSON):
 {
   "id": "1",
