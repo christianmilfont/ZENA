@@ -1,5 +1,12 @@
 # ZENA
-### Nosso projeto para Global Solutions para matéria de mobile seria um App que possui um Dashboard com os ultimos alertas, alem disso uma tela para mostrar os abrigos mais proximos e indicar o caminho a ser feito pelo usuario
+### Nosso projeto para Global Solutions para matéria de mobile seria um App que possui um Dashboard com os ultimos alertas, alem disso uma tela para mostrar os abrigos mais proximos e indicar o caminho a ser feito pelo 
+usuario
+
+Equipe:
+Christian Milfont rm555345
+Iago Victor rm558450
+Anderson Pedro rm557002
+
 - [ ] (10 pts) Criar no mínimo 5 telas e utilizar navegação entre elas (React Navigation ou Expo Router): 
 - [ ] (40 pts) Implementar um CRUD utilizando a API criada na disciplina JAVA ou .NET (Axios ou Fetch).
 - [ ] (10 pts) Estilização do aplicativo, incluindo cores, fontes, e imagens personalizadas.
