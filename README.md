@@ -137,7 +137,7 @@ GET /estacoes/paginado?page=0&size=5&sort=nome,asc&nome=central&ativo=true
 ### Para logar no Swagger:
 ```
 {
-  "username": "usuarioTeste",
+  "username": "teste@example.com",
   "password": "minhaSenha123"
 }
 ```
