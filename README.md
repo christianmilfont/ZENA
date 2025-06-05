@@ -202,3 +202,6 @@ Próximo passo foi: rodar o container localmente para testar
 docker run -p 8080:8080 zena-app
 ```
 ![image](https://github.com/user-attachments/assets/91b36b2c-7e24-459b-b2c1-46fcf5ce62b5)
+
+### Agora no render (depois de atualizar o meu repositorio com o Dockerfile e o applications.properties devidamente para não versionar com dados sensíveis
+![image](https://github.com/user-attachments/assets/d439b1d3-cde7-4fe4-8a21-48bed1d72bfb)
