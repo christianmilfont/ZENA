@@ -181,5 +181,24 @@ Body (JSON):
 - Solução que apliquei, manter o banco Oracle da FIAP remoto e fazer deploy apenas do backend na nuvem
 ![image](https://github.com/user-attachments/assets/6af3fdbe-ec68-45bc-a3b5-485ce04dd300)
 
+- Criando DockerFile para testar:
+![image](https://github.com/user-attachments/assets/8d9b7d66-e4e1-4dcc-b3fc-1ecd56d66bef)
+(aqui atualizei após o build para o nome exato do meu .jar (COPY target/ZENA-0.0.1-SNAPSHOT.jar app.jar)
 
+- Antes de rodar localmente utilizando os comandos do docker file, gerei meu .jar da aplicação:
+```
+mvn clean package
+```
+![image](https://github.com/user-attachments/assets/e1a0377c-0118-488e-80c2-78128166398b)
 
+- Após isso rodei
+```
+docker build -t zena-app .
+```
+![image](https://github.com/user-attachments/assets/dcb8a4bf-c1d1-4a91-b399-bd2dae498206)
+
+Próximo passo foi: rodar o container localmente para testar
+```
+docker run -p 8080:8080 zena-app
+```
+![image](https://github.com/user-attachments/assets/91b36b2c-7e24-459b-b2c1-46fcf5ce62b5)
