@@ -205,3 +205,7 @@ docker run -p 8080:8080 zena-app
 
 ### Agora no render (depois de atualizar o meu repositorio com o Dockerfile e o applications.properties devidamente para não versionar com dados sensíveis
 ![image](https://github.com/user-attachments/assets/d439b1d3-cde7-4fe4-8a21-48bed1d72bfb)
+
+- Buildando o deploy:
+![image](https://github.com/user-attachments/assets/caa2d92e-1174-4495-8b07-b979fb6b65fe)
+
