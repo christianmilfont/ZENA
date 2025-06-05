@@ -107,6 +107,8 @@ Ajustes no EstacaoRepository, extendendo JpaSpecificationExecutor<Estacao> (o m�
 ```
 GET /estacoes/paginado?page=0&size=5&sort=nome,asc&nome=central&ativo=true
 ```
+![image](https://github.com/user-attachments/assets/4dae5bcc-89e6-43d1-b10d-71b95a0d4483)
+
 - Swagger reconhece os parâmetros automaticamente, exibindo os parâmetros page, size, sort, nome, localizacao, ativo com base nas anotações @RequestParam
 
 #### Paginação e filtros:
