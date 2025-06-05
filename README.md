@@ -105,7 +105,7 @@ Utilizei minha API java para lidar com as requisições do App Mobile, evidente 
 - Exemplo no controller de Estação:
 Ajustes no EstacaoRepository, extendendo JpaSpecificationExecutor<Estacao> (o método findAll(...) que você está usando espera um Specification<Estacao> e não um lambda)
 ```
-GET /estacoes?page=0&size=5&sort=nome,asc&nome=central&ativo=true
+GET /estacoes/paginado?page=0&size=5&sort=nome,asc&nome=central&ativo=true
 ```
 - Swagger reconhece os parâmetros automaticamente, exibindo os parâmetros page, size, sort, nome, localizacao, ativo com base nas anotações @RequestParam
 
