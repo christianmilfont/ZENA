@@ -125,9 +125,14 @@ Utilizei minha API java para lidar com as requisições do App Mobile, evidente 
   "password": "minhaSenha123"
 }
 ```
+### Autenticação Basic do Spring Security:
 ```
-- cadastro de usuário (endpoint /users - POST)
-- URL: http://localhost:8080/users (ajuste a porta se for diferente)
+admin
+senha: 1234
+```
+```
+- cadastro de usuário (endpoint /estacoes - POST)
+- URL: http://localhost:8080/estacoes
 ```
 - Método: POST
 Exemplo:
