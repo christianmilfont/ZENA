@@ -7,49 +7,6 @@ Christian Milfont rm555345
 Iago Victor rm558450
 Anderson Pedro rm557002
 
-```
-Json para criar Usuarios:
-{
-  "id": "1",
-  "username": "admin",
-  "password": "12345",
-  "email": "cmilfont021@gmail.com",
-  "role": "ADMIN"
-}
-
-Json para criar Estacoes:
-{
-  "id": "23",
-  "nome": "Estação Luz",
-  "localizacao": "Centro de São Paulo",
-  "ativo": true, ----> eu coloco sempre 1 ou 0 pois banco oracle é muito rigido!
-  "usuario": {
-    "id": "1"
-  }
-}
-
-Json para criar Leituras Climaticas:
-{
-  "estacaoId": "23",
-  "temperatura": 36.5,
-  "umidade": 45.0,
-  "pressao": 1013.0,
-  "velocidadeVento": 5.2,
-  "direcaoVento": "Noroeste",
-  "precipitacao": 2.0,
-  "condicoesClimaticas": "Parcialmente nublado"
-}
-
-Json para criar alertas:
-{
-  "mensagem": "Calor extremo",
-  "tipo": "temperatura acima de 38 graus",
-  "leituraId": "4b1ec253-021b-4f9e-9637-5e59f1c03ddc",
-  "usuarioId": "1"
-}
-
-Usei UUID para gerar automaticamente alguns ID's
-```
 ### Arquitetura:
 - Backend: Spring Boot + JPA + REST + PostgreSQL (Banco rodando com Docker Compose)
 - Frontend: React
@@ -102,11 +59,33 @@ Camadas:
 - config: para configurar o CORS dos meus endpoints e ajustar configurações do meu Swagger para personalizar ainda mais
 
 ### - FRONTEND 
-Utilizei minha API java para lidar com as requisições do App Mobile, evidente na lógica de login no controller de User
+Utilizei minha API java para lidar com as requisições do App Mobile, evidente na lógica de login no controller de User ( FOI ADICIONADO TAMBEM EM OUTRA VERSÃO NÃO EXPOSTA PUT POR EMAIL)
+```
+@Operation(summary = "Atualiza um usuário existente pelo email")
+@ApiResponses(value = {
+    @ApiResponse(responseCode = "200", description = "Usuário atualizado com sucesso",
+        content = @Content(schema = @Schema(implementation = User.class))),
+    @ApiResponse(responseCode = "404", description = "Usuário não encontrado")
+})
+@PutMapping("/email/{email}")
+public ResponseEntity<User> atualizarPorEmail(
+        @Parameter(description = "Email do usuário", required = true, in = ParameterIn.PATH)
+        @PathVariable String email,
+        @Parameter(description = "Dados do usuário para atualização", required = true)
+        @RequestBody User user) {
+    Optional<User> usuarioOpt = userService.buscarPorNome(email);
+    if (usuarioOpt.isEmpty()) {
+        return ResponseEntity.notFound().build();
+    }
+```
+- Especialmente para minha aplicação Mobile
 
 #### Caching:
 - O cache “users” vai guardar a página e critérios da página
 
+```
+Usei UUID para gerar automaticamente alguns ID's 
+```
 ### Uitlizando Paginação, filtro e ordenação nos Controllers:
 - Exemplo no controller de Estação:
 Ajustes no EstacaoRepository, extendendo JpaSpecificationExecutor<Estacao> (o método findAll(...) que você está usando espera um Specification<Estacao> e não um lambda)
