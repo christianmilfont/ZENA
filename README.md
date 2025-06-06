@@ -28,7 +28,7 @@ Anderson Pedro rm557002
  
 - Personalização de cores, fontes e imagens de acordo com o tema do app.
 - Uso consistente do design, respeitando padrões de usabilidade.
-- Aplicação das guidelines da Apple/Google.
+- Aplicação das guidelines da Apple/Google. (usei o safe area context mesmo)
 - Criatividade e identidade visual clara e funcional
 
 ![image](https://github.com/user-attachments/assets/eed92702-db0e-45a9-8115-bca1658d243d)
