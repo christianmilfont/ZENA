@@ -1,6 +1,6 @@
 # ZENA (JAVA)
 - Título: Estação Climática Inteligente com Alerta de Eventos Extremos
-- Objetivo: Criar um sistema que recebe dados de uma estação climática, analisa esses dados para detectar condições de risco (calor extremo, umidade muito baixa, pressão indicando tempestade) e fornece uma interface para monitoramento e notificação, além de detectar os abrigos mais próximos baseados na localização do usuário.
+- Objetivo: Criar um sistema que recebe dados de uma estação climática, analisa esses dados para detectar condições de risco (calor extremo, umidade muito baixa, pressão indicando tempestade) e fornece uma interface para monitoramento e notificação, /DOTNET(além de detectar os abrigos mais próximos baseados na localização do usuário).
 
 Equipe:
 Christian Milfont rm555345
