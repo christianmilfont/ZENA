@@ -6,6 +6,7 @@ Equipe:
 Christian Milfont rm555345
 Iago Victor rm558450
 Anderson Pedro rm557002
+![image](https://github.com/user-attachments/assets/9ad0876a-0338-45ca-9c94-72a440413106)
 
 - [ ] (10 pts) Criar no mínimo 5 telas e utilizar navegação entre elas (React Navigation ou Expo Router): 
 - [ ] (40 pts) Implementar um CRUD utilizando a API criada na disciplina JAVA ou .NET (Axios ou Fetch).
