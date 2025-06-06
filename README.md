@@ -13,7 +13,7 @@ Microsoft AspNetCore
 - Mogrations: para armazenar o schema da minha entidade do banco de dados
 - Program.cs: registar minha dbcontext
 - AppSettings.json: definir minha conexão com o banco
-![image](https://github.com/user-attachments/assets/f86fbfe9-93da-4290-8351-6738f555d40e)
+![image](https://github.com/user-attachments/assets/365c423c-6f16-4c9a-9973-619163d45568)
 
 ## Como rodar a aplicação (aconselho ver vídeo demonstração primeiro):
 ```
