@@ -263,4 +263,3 @@ C:\Users\cmilf\OneDrive\Documentos\AbrigoApi\AbrigoApi\obj\Debug\net8.0\AbrigoAp
 C:\Users\cmilf\OneDrive\Documentos\AbrigoApi\AbrigoApi\obj\Debug\net8.0\AbrigoApi.genruntimeconfig.cache
 C:\Users\cmilf\OneDrive\Documentos\AbrigoApi\AbrigoApi\obj\Debug\net8.0\ref\AbrigoApi.dll
 C:\Users\cmilf\OneDrive\Documentos\AbrigoApi\AbrigoApi\obj\Debug\net8.0\AbrigoApi.sourcelink.json
-C:\Users\cmilf\OneDrive\Documentos\AbrigoApi\AbrigoApi\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

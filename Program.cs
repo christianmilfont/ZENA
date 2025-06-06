@@ -8,7 +8,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowLocalhost",
         policy =>
         {
-            policy.WithOrigins("http://localhost:8081") // ? Aqui é onde seu app React Native roda
+            policy.WithOrigins("http://192.168.0.10:8081") // ? Aqui é onde seu app React Native roda
                   .AllowAnyHeader()
                   .AllowAnyMethod()
                   .AllowCredentials(); // se precisar de cookies ou auth headers
