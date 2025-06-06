@@ -14,6 +14,11 @@ Microsoft AspNetCore
 - Program.cs: registar minha dbcontext
 - AppSettings.json: definir minha conexão com o banco
 
+## Como rodar a aplicação (aconselho ver vídeo demonstração primeiro):
+```
+dotnet run --launch-profile http
+```
+- defini dessa forma, assim como explicado no vídeo de demonstração, pois possibilita minha aplicação Mobile consumir essa minha api (configurando o launchjson com as devidas rotas para isso)
   
 ## Usando o migrations:
 
