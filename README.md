@@ -51,6 +51,7 @@ const { latitude, longitude } = location.coords;
 ```
 - Buscar todos os abrigos disponíveis
 Realiza uma requisição GET para a API (/api/Abrigoes) usando axios.
+![image](https://github.com/user-attachments/assets/df4f5281-2e2d-4a8c-9980-c05e7fb5b8ee)
 
 Espera-se que cada abrigo possua as propriedades latitude e longitude.
 ```
