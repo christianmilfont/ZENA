@@ -15,32 +15,6 @@ Microsoft AspNetCore
 - AppSettings.json: definir minha conexão com o banco
 
   
-Corpo de requisição JSON:
-```
-[
-  {
-    "id": "string",
-    "nome": "string",
-    "endereco": "string",
-    "capacidade": 0,
-    "ocupacaoAtual": 0,
-    "ativo": true,
-    "usuarioId": "string",
-    "usuario": {
-      "id": "string",
-      "username": "string",
-      "password": "string",
-      "email": "string",
-      "role": "string",
-      "abrigos": [
-        "string"
-      ]
-    },
-    "latitude": 0,
-    "longitude": 0
-  }
-]
-```
 ## Usando o migrations:
 
 ### Utilizando o comando:
