@@ -37,6 +37,10 @@ Anderson Pedro rm557002
 ------
 ![image](https://github.com/user-attachments/assets/ce257bbf-866d-4248-9e6c-8c35fed09dbd)
 
+## Tela de editar perfil:
+![Imagem do WhatsApp de 2025-06-06 à(s) 10 44 49_bf4ca267](https://github.com/user-attachments/assets/5a760772-07c1-44fc-82dd-2e10963d8aee)
+
+
 ## Tela de Rotas: Lógica para encontrar o abrigo mais próximo (fórmula de Haversine)
 - A tela RotasScreen.js é responsável por localizar o abrigo mais próximo do usuário com base na sua geolocalização:
 
