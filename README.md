@@ -7,11 +7,11 @@ Christian Milfont rm555345
 Iago Victor rm558450
 Anderson Pedro rm557002
 
-- [] (10 pts) Criar no mínimo 5 telas e utilizar navegação entre elas (React Navigation ou Expo Router): 
-- [] (40 pts) Implementar um CRUD utilizando a API criada na disciplina JAVA ou .NET (Axios ou Fetch).
-- [] (10 pts) Estilização do aplicativo, incluindo cores, fontes, e imagens personalizadas.
-- [] (20 pts) Arquitetura: será avaliada a organização dos arquivos, nomes das variáveis, funções e componentes utilizados.
-- [] (20 pts) Elabore uma gravação de um vídeo de todas as funcionalidades do Ap
+- [ ] (10 pts) Criar no mínimo 5 telas e utilizar navegação entre elas (React Navigation ou Expo Router): 
+- [ ] (40 pts) Implementar um CRUD utilizando a API criada na disciplina JAVA ou .NET (Axios ou Fetch).
+- [ ] (10 pts) Estilização do aplicativo, incluindo cores, fontes, e imagens personalizadas.
+- [ ] (20 pts) Arquitetura: será avaliada a organização dos arquivos, nomes das variáveis, funções e componentes utilizados.
+- [ ] (20 pts) Elabore uma gravação de um vídeo de todas as funcionalidades do Ap
 
 ------------------------------------
 
