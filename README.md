@@ -8,7 +8,7 @@ Iago Victor rm558450
 Anderson Pedro rm557002
 
 ### Arquitetura:
-- Backend: Spring Boot + JPA + REST + PostgreSQL (Banco rodando com Docker Compose)
+- Backend: Spring Boot + JPA + REST + Banco Oracle (Banco rodando local com a configuração no application.properties)
 - Frontend: React
 - IoT: Dispositivo que envia dados via HTTP/MQTT para uma API REST 
 - API: /leituras, /alertas, /usuarios, /abrigos
