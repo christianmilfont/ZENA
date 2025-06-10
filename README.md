@@ -15,7 +15,13 @@ Anderson Pedro rm557002
 - [ ] (20 pts) Elabore uma gravação de um vídeo de todas as funcionalidades do Ap
 
 ------------------------------------
-
+## Como logar? (usuario salvo no banco)
+```
+{
+  "username": "teste@example.com",
+  "password": "minhaSenha123"
+}
+```
 ## Criar no mínimo 5 telas e utilizar navegação entre elas (React Navigation ou Expo Router):
 - O aplicativo deve conter, no mínimo, 5 telas distintas com navegação fluida entre elas.
 - A navegação deve seguir boas práticas de usabilidade e acessibilidade.
